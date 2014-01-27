@@ -9,12 +9,16 @@
 #import "WLAllUsersTableVCTL.h"
 #import "WLdbUserObj.h"
 #import "WLAppDelegate.h"
-
+#import "WLSummaryObj.h"
 @interface WLAllUsersTableVCTL ()
+{
+
+}
 
 @end
 
 @implementation WLAllUsersTableVCTL
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -65,15 +69,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-  
+    
   SAFECHECK_RELEASE(_userArray);
   SAFECHECK_RELEASE(_selectionArray);
+
 }
 
 - (void)dealloc {
   
   [_userArray release];
   [_selectionArray release];
+
   
   [super dealloc];
 }
@@ -157,6 +163,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   NSUInteger selected = [[_selectionArray objectAtIndex:[indexPath row]] intValue];
+    
   [_selectionArray replaceObjectAtIndex:[indexPath row] withObject:INT2NUM(1-selected)];
   [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
@@ -164,6 +171,7 @@
 #pragma mark - 
 - (void)confirmed:(id)sender {
   
+
   NSMutableArray *attendees = [WLAppDelegate currentAttendees];
   [attendees removeAllObjects];
   
@@ -173,7 +181,8 @@
       [attendees addObject:[_userArray objectAtIndex:i]];
     }
   }
-  
+    
+  [[WLAppDelegate sharedDelegate] saveGlobalData];
   [self.navigationController popViewControllerAnimated:YES];
 }
 

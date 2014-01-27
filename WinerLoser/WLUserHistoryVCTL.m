@@ -94,9 +94,9 @@
     WLdbGameObj *obj = [_userScoreInOneGameArray objectAtIndex:[indexPath row]];
     cell.textLabel.text = [NSString stringWithFormat:@"第%d局", obj.gameIndex];
     if (obj.score > 0) {
-      cell.detailTextLabel.textColor = kLoserColor;
-    }else {
       cell.detailTextLabel.textColor = kWinnerColor;
+    }else {
+      cell.detailTextLabel.textColor = kLoserColor;
     }
     
     if (obj.score == 0) {
@@ -118,9 +118,9 @@
     WLdbGameObj *obj = [_userCashOutHistoryArray objectAtIndex:[indexPath row]];
     cell.textLabel.text = [NSString stringWithFormat:@"第%d次", -obj.gameIndex];
     if (obj.score > 0) {
-      cell.detailTextLabel.textColor = kLoserColor;
-    }else {
       cell.detailTextLabel.textColor = kWinnerColor;
+    }else {
+      cell.detailTextLabel.textColor = kLoserColor;
     }
     
     if (obj.score == 0) {

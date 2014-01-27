@@ -132,11 +132,11 @@
   WLdbGameObj *obj = [_gameObjArray objectAtIndex:[indexPath row]];
   cell.textLabel.text = obj.userName;
   if (obj.score > 0) {
-    cell.detailTextLabel.textColor = kLoserColor;
-  }else {
     cell.detailTextLabel.textColor = kWinnerColor;
+  }else {
+    cell.detailTextLabel.textColor = kLoserColor;
   }
-  cell.detailTextLabel.text = [Utilities double2string:obj.score];
+  cell.detailTextLabel.text = [Utilities double2string:(0- obj.score)];
   cell.selectionStyle = UITableViewCellSelectionStyleNone;
   
   return cell;

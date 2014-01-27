@@ -68,14 +68,14 @@
   if (cashOutObj.isWinner) {
     
     _ibShouldLbl.text = @"应收";
-    _ibShouldLbl.textColor = kWinnerColor;
-    _ibShouldNumLbl.textColor = kWinnerColor;
+    _ibShouldLbl.textColor = kLoserColor;
+    _ibShouldNumLbl.textColor = kLoserColor;
     _ibShouldNumLbl.text = [Utilities double2string:-cashOutObj.shouldValue];
   }else {
     
     _ibShouldLbl.text = @"应付";
-    _ibShouldNumLbl.textColor = kLoserColor;
-    _ibShouldLbl.textColor = kLoserColor;
+    _ibShouldNumLbl.textColor = kWinnerColor;
+    _ibShouldLbl.textColor = kWinnerColor;
     _ibShouldNumLbl.text = [Utilities double2string:cashOutObj.shouldValue];
   }
   

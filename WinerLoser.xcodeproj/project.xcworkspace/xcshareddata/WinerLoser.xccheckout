@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A419E279-3C06-4A8F-9AE4-043424B6876B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WinerLoser</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>670200C4-89ED-45EF-AFE1-8AC157AE96DC</key>
+		<string>https://github.com/surfingtomchen/iOS_winnerLoser</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WinerLoser.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>670200C4-89ED-45EF-AFE1-8AC157AE96DC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/surfingtomchen/iOS_winnerLoser</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>670200C4-89ED-45EF-AFE1-8AC157AE96DC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>670200C4-89ED-45EF-AFE1-8AC157AE96DC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>winnerLoser</string>
+		</dict>
+	</array>
+</dict>
+</plist>

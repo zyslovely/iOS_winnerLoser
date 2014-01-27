@@ -15,4 +15,7 @@
 
 @property (nonatomic, retain) NSArray *summaryArray;
 
+
+
+
 @end

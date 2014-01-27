@@ -44,17 +44,18 @@
 
   
   if ([summaryObj.totalScoreString doubleValue] > 0) {
-    _ibSummaryLbl.textColor = kLoserColor;
-  }else
     _ibSummaryLbl.textColor = kWinnerColor;
+  }else
+    _ibSummaryLbl.textColor = kLoserColor;
 
   if ([summaryObj.unPaidString doubleValue] > 0) {
-    _ibUnpaidLbl.textColor = kLoserColor;
-  }else
     _ibUnpaidLbl.textColor = kWinnerColor;
+  }else
+    _ibUnpaidLbl.textColor = kLoserColor;
  
-  _ibSummaryLbl.text = [NSString stringWithFormat:@"%@", summaryObj.totalScoreString];
-  _ibUnpaidLbl.text = [NSString stringWithFormat:@"%@", summaryObj.unPaidString];
+    
+  _ibSummaryLbl.text = [NSString stringWithFormat:@"%d", (0-[summaryObj.totalScoreString intValue])];
+  _ibUnpaidLbl.text = [NSString stringWithFormat:@"%d", (0-[summaryObj.unPaidString intValue])];
   [_ibRoundLoserLimitationView setHidden:!summaryObj.isRoundLimitationReached];
 }
 
